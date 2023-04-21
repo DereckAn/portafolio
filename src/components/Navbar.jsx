@@ -23,8 +23,8 @@ const [toggle, setToggle] = useState(false);
           window.scrollTo(0,0);
 
           }}>
-            <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
-            <p className="text-white text-[18px] font-bold cursor-pointer">
+            <img src={logo} alt="logo" className='w-14 h-14 object-contain' />
+            <p className="text-white text-[18px] font-bold cursor-pointer pl-4">
               Dereck Angeles &nbsp; 
                 <span className='sm:block hidden'> 
                   Full Stack Developer &nbsp;
@@ -50,7 +50,7 @@ const [toggle, setToggle] = useState(false);
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <ima src={toggle ? close : menu} 
+          <img src={toggle ? close : menu} 
           alt="menu" 
           className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={()=>setToggle(!toggle)} />
@@ -75,10 +75,7 @@ const [toggle, setToggle] = useState(false);
                         </li>
                       ))}
 
-                    </ul>
-
-            
-
+                    </ul>           
           </div>
         </div>
 
