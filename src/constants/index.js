@@ -1,5 +1,5 @@
 import {
-    mobile,
+    flutter,
     backend,
     creator,
     web,
@@ -47,7 +47,7 @@ import {
     },
     {
       title: "Flutter Developer",
-      icon: mobile,
+      icon: flutter,
     },
     {
       title: "Backend Developer",

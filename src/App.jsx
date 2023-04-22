@@ -10,11 +10,13 @@ const App = () => {
         <Navbar />
         <Hero />
       </div>
-      <div className="bg-cerdo-pattern-3 bg-cover bg-no-repeat bg-center">
+      <div className="bg-cerdo-pattern-3 bg-cover bg-no-repeat bg-center z-2">
         <About />
       </div>
+      <div className="bg-cerdo-pattern-2 bg-cover bg-no-repeat bg-center z-2">
+        <Experience />
+      </div>
       
-      <Experience />
       <Tech/>
       <Works />
       <Feedbacks />
