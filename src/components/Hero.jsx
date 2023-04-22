@@ -23,12 +23,14 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I am <span className='text-[#915eff]'>Dereck Angeles</span></h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}> I am a Full Stack Developer with a passion for creating beautiful and functional websites and applications. <br className='sm:block hidden'/> 
-          I am also a self-taught artist and a musician.
+          I am also a self-taught photographer and a musician.
 
           </p>
         </div>
       </div>
     <ComputersCanvas/>
+
+    
       
     </section>
   )
