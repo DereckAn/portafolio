@@ -19,7 +19,9 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/cerdo.webp')",
+        "cerdo-pattern": "url('/src/assets/cerdo.webp')",
+        "cerdo-pattern-2": "url('/src/assets/cerdo2.webp')",
+        "cerdo-pattern-3": "url('/src/assets/cerdo3.webp')",
       },
     },
   },
