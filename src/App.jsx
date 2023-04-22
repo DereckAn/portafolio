@@ -6,19 +6,26 @@ const App = () => {
   return (
     <BrowserRouter>
     <div className="realtive z-0 bg-primary">
-      <div className="bg-cerdo-pattern bg-cover bg-no-repeat bg-center">
+      <div className="bg-transparent">
         <Navbar />
+      </div>
+      <div className="bg-cerdo-pattern bg-cover bg-no-repeat bg-center">
         <Hero />
       </div>
-      <div className="bg-cerdo-pattern-3 bg-cover bg-no-repeat bg-center z-2">
+      <div className="bg-cerdo-pattern-3 bg-cover bg-no-repeat bg-center">
         <About />
       </div>
-      <div className="bg-cerdo-pattern-2 bg-cover bg-no-repeat bg-center z-2">
+      <div className="bg-cerdo-pattern-2 bg-cover bg-no-repeat bg-center">
         <Experience />
       </div>
-      
-      <Tech/>
-      <Works />
+      <div className="bg-cerdo-pattern bg-cover bg-no-repeat bg-center border-8"
+      style={{backgroundAttachment: 'fixed', backgroundPosition: '50% 0'}}> 
+        <Tech/>
+      </div>
+     
+      <div className="bg-cerdo-pattern-5 bg-cover bg-no-repeat bg-center">
+        <Works />
+      </div>
       <Feedbacks />
       <div className="relative z-0">
         <Contact />

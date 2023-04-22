@@ -13,7 +13,11 @@ const [active, setActive] = useState("");
 const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-transparent border-b-2`}
+    style={{ 
+      backdropFilter: 'blur(30px)',
+      backgroundColor: 'rgba(128, 128, 128, 0.5)'
+    }}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" 
         className='flex items-center gap-2' 
