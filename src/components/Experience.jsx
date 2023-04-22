@@ -12,7 +12,7 @@ const ExperienceCard = ({ experience }) => (
     background: 'rgba(128, 128, 128, 0.2)', 
     color: '#fff', 
     border: '4px solid #fff',
-    borderRadius: '10px',
+    borderRadius: '30px',
     backdropFilter: 'blur(15px)',
   }}
   contentArrowStyle={{ borderRight: '7px solid  #232631'}}
