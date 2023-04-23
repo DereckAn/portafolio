@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { smile } from '../assets';
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
 
         <div className='flex flex-col justify-center items-center mt-5'>
         
-          <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
+          <div className='w-5 h-5 rounded-full bg-[#69ff5e]'/>
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
 
 
@@ -28,7 +29,13 @@ const Hero = () => {
           </p>
         </div>
       </div>
-    <ComputersCanvas/>
+      <div className='absolute
+          xs:bottom-10 bottom-30 right-[50%]
+          '>
+        <img src={smile} alt="yo" className='p-0 rounded-3xl sm:w-[360px] w-full   '/>
+      </div>
+      
+    {/* <ComputersCanvas/> */}
 
     <div 
     className='absolute 
