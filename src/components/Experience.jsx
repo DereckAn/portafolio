@@ -11,7 +11,7 @@ const ExperienceCard = ({ experience }) => (
   contentStyle={{
     background: 'rgba(128, 128, 128, 0.2)', 
     color: '#fff', 
-    border: '4px solid #fff',
+    border: '0px #fff',
     borderRadius: '30px',
     backdropFilter: 'blur(15px)',
   }}
