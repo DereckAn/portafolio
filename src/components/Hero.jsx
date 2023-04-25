@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I am <span className='text-[#915eff]'>Dereck Angeles</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I am <span className='text-[#ff5ef7]'>Dereck Angeles</span></h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}> I am a Full Stack Developer with a passion for creating beautiful and functional websites and applications. <br className='sm:block hidden'/> 
           I am also a self-taught photographer and a musician.
@@ -29,8 +29,8 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className='absolute
-          xs:bottom-10 bottom-30 right-[50%]
+      <div className='absolute w-[300px] h-[200px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2
+          xs:bottom-10
           '>
         <img src={smile} alt="yo" className='p-0 rounded-3xl sm:w-[360px] w-full   '/>
       </div>
