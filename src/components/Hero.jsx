@@ -14,25 +14,21 @@ const Hero = () => {
 
         <div className='flex flex-col justify-center items-center mt-5'>
         
-          <div className='w-5 h-5 rounded-full bg-[#69ff5e]'/>
-          <div className='w-1 sm:h-80 h-40 violet-gradient'/>
+          {/* <div className='w-5 h-5 rounded-full bg-[#69ff5e]'/>
+          <div className='w-1 sm:h-80 h-40 violet-gradient'/> */}
 
 
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I am <span className='text-[#ff5ef7]'>Dereck Angeles</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I am <span className='text-[#070407]'>Dereck Angeles</span></h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}> I am a Full Stack Developer with a passion for creating beautiful and functional websites and applications. <br className='sm:block hidden'/> 
           I am also a self-taught photographer and a musician.
 
           </p>
+        <img src={smile} alt="yo" className='rounded-3xl sm:w-[250px] w-full mt-7'/>
         </div>
-      </div>
-      <div className='absolute w-[300px] h-[200px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2
-          xs:bottom-10
-          '>
-        <img src={smile} alt="yo" className='p-0 rounded-3xl sm:w-[360px] w-full   '/>
       </div>
       
     {/* <ComputersCanvas/> */}
