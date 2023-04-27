@@ -23,7 +23,7 @@ module.exports = {
         "cerdo-pattern-2": "url('/src/assets/cerdo2.webp')",
         "cerdo-pattern-3": "url('/src/assets/cerdo3.webp')",
         "cerdo-pattern-4": "url('/src/assets/cerdo4.webp')",
-        "cerdo-pattern-5": "url('/src/assets/cerdo5.webp')",
+        "cerdo-pattern-5": "url('/src/assets/arbusto.webp')",
       },
     },
   },
