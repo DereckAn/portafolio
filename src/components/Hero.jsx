@@ -1,8 +1,11 @@
 import React from 'react'
+import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import { smile } from '../assets';
+import { fadeIn, textVariant } from '../utils/motion';
+
 
 const Hero = () => {
   return (
@@ -27,7 +30,63 @@ const Hero = () => {
           I am also a self-taught photographer and a musician.
 
           </p>
+
+
+          <div className='flex justify-evenly'>
         <img src={smile} alt="yo" className='rounded-3xl sm:w-[250px] w-full mt-7'/>
+
+
+        <div 
+    // variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    //   <Tilt options={{
+    //     max: 45,
+    //     scale: 1,
+    //     speed: 450
+    //   }}
+      className='bg-transparent p-5 rounded-2xl sm:w-[360px] w-full  '
+      style={{ 
+        backdropFilter: 'blur(10px)',
+        backgroundColor: 'rgba(128, 128, 128, 0.2)'
+      }}>
+        <div className='relative w-full h-[230px]'>
+          
+          <img 
+          src={smile}
+          alt={name}
+          className='w-full h-full object-cover rounded-2xl'/>
+
+          <div 
+          className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div 
+            onClick={()=> window.open(source_code_link, '_blank')}
+            className='black-gradient w-10 h-10 rounded-full 
+            flex justify-center items-center cursor-pointer'>
+
+              <img 
+              src={smile} 
+              alt='github' 
+              className='w-1/2 h-1/2 object-contain'/>
+
+            </div>
+          </div>
+        </div>
+{/* 
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>
+            {name}
+          </h3>
+          <p className='mt-2 text-white text-[14px] '>{description}</p>
+        </div> */}
+
+
+
+      {/* </Tilt>/ */}
+    </div>
+    </div>
+
+
+
+
         </div>
       </div>
       
