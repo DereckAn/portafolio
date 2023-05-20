@@ -1,10 +1,11 @@
 import React from 'react'
-import { Tilt } from 'react-tilt';
+// import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+// import { ComputersCanvas } from './canvas';
 import { smile } from '../assets';
-import { fadeIn, textVariant } from '../utils/motion';
+// import { fadeIn, textVariant } from '../utils/motion';
+import ExpandedCard from './ExpandedCard';
 
 
 const Hero = () => {
@@ -32,10 +33,10 @@ const Hero = () => {
           </p>
 
 
-          <div className='flex justify-evenly'>
-        <img src={smile} alt="yo" className='rounded-3xl sm:w-[250px] w-full mt-7'/>
+          <div className='flex justify-between'>
+        <img src={smile} alt="yo" className='rounded-full sm:w-[250px] mt-7 '/>
 
-
+          <ExpandedCard/>
         
     </div>
 
