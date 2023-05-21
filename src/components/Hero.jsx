@@ -1,72 +1,78 @@
-import React from 'react'
-// import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-// import { ComputersCanvas } from './canvas';
-import { smile } from '../assets';
-// import { fadeIn, textVariant } from '../utils/motion';
-import ExpandedCard from './ExpandedCard';
+import { smile, resume } from '../assets';
+import React, { useState }  from 'react';
+
 
 
 const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div 
+      <motion.div 
       className={`${styles.paddingX} 
       absolute inset-0 top-[120px] max-w-7xl mx-auto 
       flex flex-row items-start gap-5`}>
 
-        <div className='flex flex-col justify-center items-center mt-5'>
-        
-          {/* <div className='w-5 h-5 rounded-full bg-[#69ff5e]'/>
-          <div className='w-1 sm:h-80 h-40 violet-gradient'/> */}
+        <motion.div>
+          {isOpen && (
+            <motion.div
+            className='w-[75%]  mt-7 flex flex-col'
+            onClick={() => setIsOpen(!isOpen)}
+            layout='position'
+            transition={{ duration: 1, type: 'spring', bounce: 0.5 }}>
+              <img 
+              src={resume}
+              alt='resume'
+              className='w-full h-full object-cover rounded-2xl'/>
+              <button className='  top-0 right-0 p-2  rounded-2xl items-center border'
+              style={{ backdropFilter: 'blur(10px)',
+              backgroundColor: 'rgba(128, 128, 128, 0.2)'}}>Download</button>
+              </motion.div>
+            )}
 
 
-        </div>
+          {!isOpen && (
+          <>
+          <motion.div>
+            <h1 className={`${styles.heroHeadText} text-white`}>Hi, I am <span className='text-[#070407]'>Dereck Angeles</span></h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}> I am a Full Stack Developer with a passion for creating beautiful and functional websites and applications. <br className='sm:block hidden' />
+              I am also a self-taught photographer and a musician.
+            </p>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I am <span className='text-[#070407]'>Dereck Angeles</span></h1>
+            <motion.div className='flex justify-between mt-10 '>
+              <img src={smile} alt="yo" className=' sm:w-[250px] mt-7 xs:w-[250px] bg-center' />
+              <motion.div
+              onClick={() => setIsOpen(!isOpen)}
+             
+              className='bg-transparent p-3 rounded-2xl sm:w-[250px]  mt-7 xs:w-[250px] '
+              style={{
+                backdropFilter: 'blur(10px)',
+                backgroundColor: 'rgba(128, 128, 128, 0.2)'
+              }}>
 
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}> I am a Full Stack Developer with a passion for creating beautiful and functional websites and applications. <br className='sm:block hidden'/> 
-          I am also a self-taught photographer and a musician.
+              <motion.div className='relative w-full '>
+                <img
+                  src={resume}
+                  alt="resume"
+                  className='w-full h-full object-cover rounded-2xl ' />
+                <h2 className=' flex  justify-center font-bold mt-3'
+                  style={{ fontSize: '24px' }}>Resume</h2>
+              </motion.div>
 
-          </p>
+            </motion.div>
+            
+            </motion.div>
+          </motion.div>
+          
+          
+            </>
+                )}
 
 
-          <div className='flex justify-between'>
-        <img src={smile} alt="yo" className='rounded-full sm:w-[250px] mt-7 '/>
-
-          <ExpandedCard/>
-        
-    </div>
-
-
-
-
-        </div>
-      </div>
-      
-    {/* <ComputersCanvas/> */}
-
-    <div 
-    className='absolute 
-    xs:bottom-10 bottom-32 w-full 
-    flex justify-center items-center'>
-
-      <a href='#about'>
-        <div className='w-[34px] h-[64px] rounded-3xl border-4 border-secondary
-        flex justify-center items-start p-2'>
-
-          <motion.dev 
-          animate={{y: [0,30,0]}} 
-          transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop'}}
-          className='w-3 h-3 rounded-full bg-secondary mb-1'/>
-
-        </div>
-      </a>
-
-    </div>
-      
+            </motion.div>
+      </motion.div>
     </section>
   )
 }
