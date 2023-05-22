@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom"
-import { About, Contact, Experience, Feedbacks,Tech, Hero, Navbar, Works, StarsCanvas } from "./components"
+import { About, Contact, Experience, Tech, Hero, Navbar, Works, StarsCanvas } from "./components"
 
 const App = () => {
 
@@ -26,7 +26,6 @@ const App = () => {
       <div className="bg-cerdo-pattern bg-cover bg-no-repeat bg-center">
         <Works />
       </div>
-      {/* <Feedbacks /> */}
       <div className="relative z-0">
         <Contact />
         <StarsCanvas/>

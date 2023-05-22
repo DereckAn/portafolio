@@ -64,27 +64,24 @@ const [toggle, setToggle] = useState(false);
           mx-4 my-2 min-w-[140px] z-10 rounded-xl `}>
 
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
-                      {navLinks.map((Link) => (
-                        <li key={Link.id}
-                        className={`${active === Link.title 
-                          ? "text-white" 
-                          : "text-secondary"} 
-                        font-poppins font-medium cursor-pointer text-[16px]`} 
-                        
-                        onClick={ ()=> {
-                          setToggle(!toggle); //Esto es para cerrar el menu una vez que toquemos una opcion 
-                          setActive(Link.title);
-                        }}>
-                          <a href={`#${Link.id}`}>{Link.title}</a>
-                        </li>
-                      ))}
-
-                    </ul>           
+              {navLinks.map((Link) => (
+                <li key={Link.id}
+                className={`${active === Link.title 
+                  ? "text-white" 
+                  : "text-secondary"} 
+                font-poppins font-medium cursor-pointer text-[16px]`} 
+                
+                onClick={ ()=> {
+                  setToggle(!toggle); //Esto es para cerrar el menu una vez que toquemos una opcion 
+                  setActive(Link.title);
+                }}>
+                  <a href={`#${Link.id}`}>{Link.title}</a>
+                </li>
+              ))}
+            </ul>           
           </div>
         </div>
-
       </div>
-
     </nav>
   )
 }

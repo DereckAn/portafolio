@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import smile from "./smiling.webp";
 import resume from  "./resume.webp";
+import dereckRes from "./Dereck_Angeles.pdf"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -33,6 +34,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  dereckRes,
   logo,
   backend,
   creator,

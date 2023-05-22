@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@react-pdf/render": "^3.2.4",
+    "@react-pdf/renderer": "^3.1.9",
     "@react-three/drei": "^9.65.3",
     "@react-three/fiber": "^8.12.2",
     "@types/three": "^0.150.2",
