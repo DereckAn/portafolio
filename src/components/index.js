@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import ExpandedCard from './ExpandedCard';
+import Tecnologies from './Tecnologies';
 
 export {
   Hero,
@@ -22,5 +23,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  ExpandedCard
+  ExpandedCard,
+  Tecnologies
 }

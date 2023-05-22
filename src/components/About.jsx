@@ -3,15 +3,15 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+import { services, technologies } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, name, icon }) => (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div 
       variants={fadeIn('right',"spring", 0.5 * index, 0.75)}
-      className='w-full p-[0px] rounded-[50px] shadow-card '>
+      className='w-[200px] p-[0px] rounded-[50px] shadow-card '>
         
         <div 
         options={{
@@ -19,17 +19,17 @@ const ServiceCard = ({ index, title, icon }) => (
           scale:1,
           speed:450,
          }}
-        className='bg-transparent rounded-[50px] py-5 px-12 min-h-[280px] flex justify-evenly
+        className='bg-transparent rounded-[50px] py-5 px-12 min-h-[200px]  flex justify-evenly
         items-center flex-col '
         style={{ 
           backdropFilter: 'blur(10px)',
           backgroundColor: 'rgba(128, 128, 128, 0.2)'
         }}> 
 
-        <img  src={icon} alt={title} 
+        <img  src={icon} alt={name} 
         className='w-16 h-16 object-contain'/>
 
-          <h3 className='text-white text-[20px] font-bold text-center'> {title} </h3>
+          <h3 className='text-white text-[20px] font-bold text-center'> {name} </h3>
 
 
         </div>
@@ -60,9 +60,9 @@ const About = () => {
 
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10 '>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title}
-          index={index} {...service}/>
+        {technologies.map((technologies, index) => (
+          <ServiceCard key={technologies.name}
+          index={index} {...technologies}/>
           
         ))}
         

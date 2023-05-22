@@ -15,7 +15,7 @@ const Hero = () => {
   <>
     <section className='relative w-auto h-screen mx-auto  '>
       <motion.div
-      className={`justify-center absolute inset-0 top-[120px] flex flex-row items-start gap-5 overflow-auto w-full`}
+      className={` flex justify-center absolute inset-0 top-[120px] flex-row items-start `}
     >
       {isOpen && (
         <motion.div
@@ -44,7 +44,8 @@ const Hero = () => {
       )}
 
       {!isOpen && (
-        <motion.div>
+        <motion.div
+        className='overflow-auto '>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I am <span className='text-[#070407]'>Dereck Angeles</span>
           </h1>
@@ -55,7 +56,7 @@ const Hero = () => {
           </p>
 
           <motion.div className='flex justify-between mt-20 flex-wrap gap-10 inset-0 w-full'>
-            <img src={smile} alt="yo" className='rounded-2xl sm:w-[250px] mt-7 xs:w-[250px] bg-center flex' />
+            <img src={smile} alt="yo" className=' sm:w-[250px] mt-7 xs:w-[250px] bg-center flex h-96 w-96 rounded-full' />
 
             <motion.div
               onClick={() => setIsOpen(!isOpen)}
