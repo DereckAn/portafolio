@@ -1,8 +1,5 @@
 import {
     flutter,
-    backend,
-    creator,
-    web,
     javascript,
     java,
     html,
@@ -38,25 +35,6 @@ import {
     {
       id: "contact",
       title: "Contact",
-    },
-  ];
-  
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "Flutter Developer",
-      icon: flutter,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
@@ -258,4 +236,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { technologies, experiences, testimonials, projects };
