@@ -13,9 +13,9 @@ const Hero = () => {
 
   return (
   <>
-    <section className='relative w-auto h-screen mx-auto  '>
+    <section className='relative w-auto h-screen   mx-auto my-auto'>
       <motion.div
-      className={` flex justify-center absolute inset-0 top-[120px] flex-row items-start `}
+      className={` flex justify-center absolute inset-0 top-[120px] flex-row items-start z-0 `}
     >
       {isOpen && (
         <motion.div
