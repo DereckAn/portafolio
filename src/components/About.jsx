@@ -8,10 +8,10 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, name, icon }) => (
-    <Tilt className='xs:w-[250px] w-full'>
+    <Tilt className='xs:w-[180px] w-full'>
       <motion.div 
       variants={fadeIn('right',"spring", 0.5 * index, 0.75)}
-      className='w-[200px] p-[0px] rounded-[50px] shadow-card '>
+      className='w-[200px]  rounded-[50px] shadow-card '>
         
         <div 
         options={{
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, name, icon }) => (
           scale:1,
           speed:450,
          }}
-        className='bg-transparent rounded-[50px] py-5 px-12 min-h-[200px]  flex justify-evenly
+        className='bg-transparent rounded-[50px] py-5 px-12 h-180   flex justify-evenly
         items-center flex-col '
         style={{ 
           backdropFilter: 'blur(10px)',
@@ -37,7 +37,7 @@ const ServiceCard = ({ index, name, icon }) => (
       </motion.div>
       
     </Tilt>
-  )
+  ) 
 
 const About = () => { 
   return (
@@ -59,7 +59,7 @@ const About = () => {
        technologies and trends in the computer science field. 
 
       </motion.p>
-      <div className='mt-20 flex flex-wrap gap-10 '>
+      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {technologies.map((technologies, index) => (
           <ServiceCard key={technologies.name}
           index={index} {...technologies}/>

@@ -12,7 +12,7 @@ import { linkin, github } from "../assets";
 // serviceid : service_0zr7uhi
 // public_key : USa-dxzwYjriyohHM
 
-
+ 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
