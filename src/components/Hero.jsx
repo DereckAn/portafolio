@@ -27,7 +27,6 @@ const Hero = () => {
             alt="resume"
             className="w-full h-full object-cover rounded-2xl"
           />
-
           <a
             href={dereckRes}
             download
