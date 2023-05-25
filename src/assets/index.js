@@ -1,11 +1,15 @@
 import logo from "./pato.png";
-import creator from "./creator.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import smile from "./smiling.webp";
+import smile2 from "./smile2.webp";
 import resume from  "./resume.webp";
 import dereckRes from "./Dereck_Angeles.pdf"
+import portaIma from "./portaIma.webp";
+import dessert from "./dessertshop.webp";
+import drawing from "./drawing.webp";
+import math from "./math.webp";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -23,16 +27,13 @@ import dart from "./tech/dart.png";
 import sql from "./tech/sql.png";
 import fastapi from "./tech/fastapi.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 export {
+  math,
+  drawing,
+  dessert,
+  portaIma,
+  smile2,
   fastapi,
   sql,
   dart,
@@ -41,7 +42,6 @@ export {
   java,
   dereckRes,
   logo,
-  creator,
   flutter,
   github,
   menu,
@@ -56,11 +56,4 @@ export {
   nodejs,
   reactjs,
   tailwind,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
 };

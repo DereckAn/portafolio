@@ -27,8 +27,8 @@
 
 .row{
   display: inline-flex;
-  margin-top: calc(var(--v1) * -0.32);;
-  margin-left: calc(var(--v1) * -0.5);;
+  margin-top: calc(var(--v1) * -0.32);
+  margin-left: calc(var(--v1) * -0.5);
 }
 
 button.hexagon{
@@ -125,6 +125,38 @@ body:hover .curser{
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
+.red-text-gradient {
+  background: #911608; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #911608,
+    #911608
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #911608,
+    #911608
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orange-text-gradient {
+  background: #f5af19; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f5af19,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f5af19,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -174,6 +206,23 @@ body:hover .curser{
   -webkit-text-fill-color: transparent;
 }
 
+.blue2-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #459fbd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #1a14c5,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #1a14c5,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .pink-text-gradient {
   background: #ec008c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -185,6 +234,21 @@ body:hover .curser{
     to top,
     #ec008c,
     #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.grey-text-gradient {
+  background: #aba9aa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #aba9aa,
+    #aba9aa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #aba9aa,
+    #aba9aa
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

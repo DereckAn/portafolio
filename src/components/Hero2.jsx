@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
 import { motion } from 'framer-motion';
-import { resume, smile, dereckRes } from '../assets';
+import { resume, dereckRes, smile2 } from '../assets';
 import { fadeIn, textVariant } from '../utils/motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
@@ -45,7 +45,7 @@ const ExpandedCard = () => {
     
     <div className='flex justify-between mt-20 flex-wrap gap-10 inset-0 w-full'>
 
-    <img src={smile} alt="yo" className=' sm:w-[250px] mt-7 xs:w-[250px] bg-center flex h-96 w-96 rounded-2xl' />
+    <img src={smile2} alt="yo" className=' sm:w-[250px] mt-7 xs:w-[250px]  h-96 rounded-2xl' />
     <motion.div
                     layout='position'
                     
@@ -78,7 +78,7 @@ const Hero2 = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-        <h1 className={`${styles.heroHeadText} text-white`}>
+        <h1 className={`${styles.heroHeadText} text-gray-400 `}>
             Hi, I am <span className='text-[#070407]'>Dereck Angeles</span>
           </h1>
     </motion.div>

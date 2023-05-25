@@ -12,11 +12,12 @@ import {
     git,
     sql,
     docker,
-    carrent,
-    jobit,
-    tripguide,
+    portaIma,
+    dessert,
     linux,
-    fastapi
+    fastapi,
+    drawing,
+    math
   } from "../assets";
   
   export const navLinks = [
@@ -172,67 +173,101 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Portafolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "This project had the primary goal of creating a website that would allow me to introduce my-self and to showcase my skills and projects.",
       tags: [
+        {
+          name: "HTML",
+          color: "red-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue2-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "orange-text-gradient",
+        },
         {
           name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: portaIma,
+      source_code_link: "https://github.com/DereckAn/portafolio.git",
+    },
+    {
+      name: "Drawing Java",
+      description:
+        `Our goal was to create geometric figures with java code.
+        The shapes should be separate objects and they have to fit the size of the window. The color, the position, and the amount of details should vary.`,
+      tags: [
+        {
+          name: "Java",
+          color: "red-text-gradient",
+        },
+      ],
+      image: drawing,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Math with Python",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        `Our goal was to create geometric figures with java code.
+        The shapes should be separate objects and they have to fit the size of the window. The color, the position, and the amount of details should vary.`,
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Python",
+          color: "blue2-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
+          name: "sympy",
+          color: "grey-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "matplotlib",
+          color: "grey-text-gradient",
+        },
+        {
+          name: "Numpy",
+          color: "grey-text-gradient",
         },
       ],
-      image: jobit,
+      image: math,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Drawing Java",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        `Our goal was to create geometric figures with java code.
+        The shapes should be separate objects and they have to fit the size of the window. The color, the position, and the amount of details should vary.`,
       tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "Java",
+          color: "red-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: drawing,
+      source_code_link: "https://github.com/DereckAn/practice/tree/main/Java/Shapes/Draw",
+    },
+    {
+      name: "Dessert Shop",
+      description:
+        `This project was based on creating an application that would allow users to buy desserts and pay with a credit card, cash, or through the phone. 
+        At the end of the purchase a receipt is generated with the customer data and the products purchased.`,
+      tags: [
+        {
+          name: "Java",
+          color: "red-text-gradient",
+        },
+      ],
+      image: dessert,
+      source_code_link: "https://github.com/DereckAn/practice/tree/main/Java/Week3/DessertShop",
     },
   ];
   
