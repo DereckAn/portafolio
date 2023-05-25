@@ -1,6 +1,5 @@
 import logo from "./pato.png";
 import github from "./github.png";
-import menu from "./menu.svg";
 import close from "./close.svg";
 import smile from "./smiling.webp";
 import smile2 from "./smile2.webp";
@@ -10,6 +9,11 @@ import portaIma from "./portaIma.webp";
 import dessert from "./dessertshop.webp";
 import drawing from "./drawing.webp";
 import math from "./math.webp";
+import dice from "./dice.webp";
+import expenses from "./expenses.webp";
+import quiz from "./quiz.webp";
+import menu from "./menu.svg";
+import linkin from "./linkin.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -29,6 +33,11 @@ import fastapi from "./tech/fastapi.png";
 
 
 export {
+  linkin,
+  menu,
+  quiz, 
+  expenses,
+  dice,
   math,
   drawing,
   dessert,
@@ -44,7 +53,6 @@ export {
   logo,
   flutter,
   github,
-  menu,
   close,
   smile,
   resume,

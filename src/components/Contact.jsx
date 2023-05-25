@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import  { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { linkin, github } from "../assets";
 
 // template id : template_ygu49d9
 // serviceid : service_0zr7uhi
@@ -128,6 +129,7 @@ const Contact = () => {
             }}/>
           </label>
 
+          <div className=" flex justify-between ">
           <button type="submit"
           className="py-3 px-8 outline-none w-fit 
           text-white font-bold shadow-md shadow-primary rounded-xl"
@@ -137,6 +139,16 @@ const Contact = () => {
           }}>
             {loading ? "Sending..." : "Send"}
           </button>
+
+          <nav className="flex items-center justify-center flex-wrap px-2">
+            <a href="https://github.com/DereckAn"> 
+              <img src={github} className="w-[50px]"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/dereckan/"> 
+              <img src={linkin} className="w-[50px]"></img>
+            </a>
+          </nav>
+          </div>
 
         </form>
 

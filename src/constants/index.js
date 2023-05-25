@@ -17,7 +17,10 @@ import {
     linux,
     fastapi,
     drawing,
-    math
+    math,
+    expenses,
+    quiz,
+    dice
   } from "../assets";
   
   export const navLinks = [
@@ -201,25 +204,69 @@ import {
       image: portaIma,
       source_code_link: "https://github.com/DereckAn/portafolio.git",
     },
+
     {
-      name: "Drawing Java",
+      name: "Expenses Tracker",
       description:
-        `Our goal was to create geometric figures with java code.
-        The shapes should be separate objects and they have to fit the size of the window. The color, the position, and the amount of details should vary.`,
+        `The main objective of this project was to create an application that allows users to record their expenses and income. 
+        It is possible to modify, delete and add new expenses and income.`,
       tags: [
         {
-          name: "Java",
-          color: "red-text-gradient",
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "blue-text-gradient",
         },
       ],
-      image: drawing,
-      source_code_link: "https://github.com/",
+      image: expenses,
+      source_code_link: "https://github.com/DereckAn/practice/tree/main/flutter/app2",
     },
+
+    {
+      name: "Quizz App",
+      description:
+        `Developing a question and answer application. 
+        The main objective was to learn how to use the Stack widget, and how to manage the state of the application.`,
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: quiz,
+      source_code_link: "https://github.com/DereckAn/practice/tree/main/flutter/quiz_app",
+    },
+
+    {
+      name: "Random Dice App",
+      description:
+        `My first application in Flutter. Introduction to using the Stack widget, and managing the state of the application. 
+        Getting used to the new Dart language. And to the development of mobile applications.`,
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: dice,
+      source_code_link: "https://github.com/DereckAn/FlutterProjects/tree/main/dice",
+    },
+
     {
       name: "Math with Python",
       description:
-        `Our goal was to create geometric figures with java code.
-        The shapes should be separate objects and they have to fit the size of the window. The color, the position, and the amount of details should vary.`,
+        `Learning to use python and solving math exercises. The main objective was to learn how to use the sympy library, matplotlib, and numpy. 
+        Also to use programming logic to solve problems and handle data.`,
       tags: [
         {
           name: "Python",
@@ -241,6 +288,7 @@ import {
       image: math,
       source_code_link: "https://github.com/",
     },
+
     {
       name: "Drawing Java",
       description:
@@ -255,6 +303,7 @@ import {
       image: drawing,
       source_code_link: "https://github.com/DereckAn/practice/tree/main/Java/Shapes/Draw",
     },
+
     {
       name: "Dessert Shop",
       description:
