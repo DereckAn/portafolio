@@ -113,10 +113,10 @@ import {
       iconBg: "#383E56",
       date: "Jul 2021 - Present",
       points: [
-        "Analyzed test data from over 300 students and provided solutions to problems personalized feedback to enhance tehir learning outcomes.", 
+        "Analyzed test data from over 300 students and provided solutions to problems personalized feedback to enhance their learning outcomes.", 
         "Evaluated homework assigments of more than 150  students and identified their reasoning skills.",
         "Collaborated with manager biweekly to facilitate student learning by structing complex math topics in English and Spanish to 30 students per sesssion.",
-        "Managed and store test data in the college data base on a semesterly basis",
+        "Managed and store test data in the college data base on a semesterly basis.",
       ],
     },
     {
@@ -129,7 +129,7 @@ import {
         "Extensive knowledge of proper use of chemicals to keep 500 people safe and comfortable.",
         "Planned bi-weekly builing care activities with manager and 20 cleaning staff in order to accommodate new people.",
         "Collaborated with team members to ensure all classrooms were cleaned and organized in a timely manner.",
-        "Taught and shared all knowledge with new workers to understand company procedures and policies",
+        "Taught and shared all knowledge with new workers to understand company procedures and policies.",
       ],
     },
     {
@@ -141,8 +141,6 @@ import {
       points: [
         "Maintained daily hygiene, health, and safety standars in work areas so teachers and students gained a better learning experience.",
         "Determined in a work team availability of teachers schedule and classroom and rehearsed each in most efficient way in a weekly manner.",
-        ".",
-        ".",
       ],
     },
   ];

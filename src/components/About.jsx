@@ -19,7 +19,7 @@ const ServiceCard = ({ index, name, icon }) => (
           scale:1,
           speed:450,
          }}
-        className='bg-transparent rounded-[50px] py-5 px-12 h-180  w-180  flex justify-evenly
+        className='bg-transparent rounded-[50px] py-5 px-12  flex justify-evenly
         items-center flex-col '
         style={{ 
           backdropFilter: 'blur(10px)',
@@ -29,7 +29,7 @@ const ServiceCard = ({ index, name, icon }) => (
         <img  src={icon} alt={name} 
         className='w-16 h-16 object-contain'/>
 
-          <h3 className='text-white text-[20px] font-bold text-center'> {name} </h3>
+          <h3 className='text-white text-[18px] font-bold text-center'> {name} </h3>
 
 
         </div>

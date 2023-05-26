@@ -13,18 +13,19 @@ import { fadeIn, textVariant } from '../utils/motion';
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div 
+    // className='xs:w-[180px] w-full'
     variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt options={{
         max: 45,
         scale: 1,
         speed: 450
       }}
-      className='bg-transparent p-5 rounded-2xl sm:w-[360px] w-full  '
+      className='bg-transparent rounded-2xl sm:w-[280px] w-full w-360 '
       style={{ 
         backdropFilter: 'blur(10px)',
         backgroundColor: 'rgba(128, 128, 128, 0.2)'
       }}>
-        <div className='relative w-full h-[230px]'>
+        <div className='relative h-[230px]'>
           
           <img 
           src={image}
@@ -32,7 +33,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           className='w-full h-full object-cover rounded-2xl'/>
 
           <div 
-          className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          className='absolute inset-0 flex justify-center  card-img_hover'>
             <div 
             onClick={()=> window.open(source_code_link, '_blank')}
             className='black-gradient w-10 h-10 rounded-full 
@@ -91,7 +92,7 @@ const Works = () => {
 
     </div>
 
-    <div className='mt-20 flex flex-wrap gap-7'>
+    <div className='mt-20 flex flex-wrap gap-7 justify-evenly'>
       {projects.map((project, index) => (
         <ProjectCard  key={`project-${index}`}
         index={index}
