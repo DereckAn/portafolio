@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, name, icon }) => (
-    <Tilt className='xs:w-[180px] '>
+    <Tilt className=' '>
       <motion.div 
       variants={fadeIn('right',"spring", 0.5 * index, 0.75)}
       className='w-[200px] rounded-[50px] shadow-card '>
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, name, icon }) => (
           scale:1,
           speed:450,
          }}
-        className='bg-transparent rounded-[50px] py-5 px-12 flex justify-evenly
+        className='bg-transparent rounded-[50px] md:py-5 md:px-12  flex justify-evenly xxs:p-0
         items-center flex-col '
         style={{ 
           backdropFilter: 'blur(10px)',

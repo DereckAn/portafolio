@@ -51,6 +51,10 @@ module.exports = {
       },
       screens: {
         xs: "450px",
+        xxs: "350px",
+        xxxs: "250px",
+        lg: "1023px",
+        // ...defaultTheme.screens,
       },
       backgroundImage: {
         "cerdo-pattern": "url('/src/assets/cerdo.webp')",

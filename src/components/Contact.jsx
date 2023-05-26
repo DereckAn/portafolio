@@ -140,9 +140,9 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
 
-          <nav className="flex items-center justify-center flex-wrap px-2">
+          <nav className="flex justify-evenly flex-wrap px-2 ">
             <a href="https://github.com/DereckAn"> 
-              <img src={github} className="w-[50px]"></img>
+              <img src={github} className="w-[50px] mr-2"></img>
             </a>
             <a href="https://www.linkedin.com/in/dereckan/"> 
               <img src={linkin} className="w-[50px]"></img>
