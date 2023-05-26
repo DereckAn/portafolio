@@ -13,14 +13,14 @@ import { fadeIn, textVariant } from '../utils/motion';
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div 
-    // className='xs:w-[180px] w-full'
+    className=' w-[30%]'
     variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt options={{
         max: 45,
         scale: 1,
         speed: 450
       }}
-      className='bg-transparent rounded-2xl sm:w-[46%] p-4'
+      className='bg-transparent rounded-2xl w-full p-4'
       style={{ 
         backdropFilter: 'blur(10px)',
         backgroundColor: 'rgba(128, 128, 128, 0.2)'
@@ -92,7 +92,7 @@ const Works = () => {
 
     </div>
 
-    <div className='mt-20 flex flex-wrap gap-7 justify-evenly'>
+    <div className='mt-20 flex flex-wrap gap-7 justify-center'>
       {projects.map((project, index) => (
         <ProjectCard  key={`project-${index}`}
         index={index}
