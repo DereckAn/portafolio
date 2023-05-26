@@ -25,7 +25,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         backdropFilter: 'blur(10px)',
         backgroundColor: 'rgba(128, 128, 128, 0.2)'
       }}>
-        <div className='relative h-[230px]'>
+        <div className='relative h-[49%]'>
           
           <img 
           src={image}
