@@ -43,7 +43,7 @@ const ExpandedCard = () => {
   
          {!isOpen && (
     
-    <div className='flex justify-between mt-20 flex-wrap gap-10 inset-0 w-full'>
+    <div className='flex justify-evenly mt-20 flex-wrap gap-10 inset-0 w-full '>
 
     <img src={smile2} alt="yo" className=' sm:w-[250px] mt-7 xs:w-[250px]  h-96 rounded-2xl' />
     <motion.div

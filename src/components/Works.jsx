@@ -5,7 +5,7 @@ import { styles } from '../styles';
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion'; 
 
 
 //https://www.ensign.edu/favicon-32x32.png  este es icono de la escuela ensign college 

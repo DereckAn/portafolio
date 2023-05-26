@@ -49,7 +49,7 @@ const ExperienceCard = ({ experience }) => (
   </VerticalTimelineElement>
 )
 
-
+ 
 const Experience = () => {
   return (
     <>
