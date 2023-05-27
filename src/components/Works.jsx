@@ -13,24 +13,24 @@ import { fadeIn, textVariant } from '../utils/motion';
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div 
-    // className=' w-[30%] xxs:w-full'
+    className=' flex flex-col xxs:w-full '
     variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt options={{
         max: 45,
         scale: 1,
         speed: 450
       }}
-      className='  bg-transparent rounded-2xl  sm:w-[360px] xxs:w-[300px] p-4 '
+      className='  bg-transparent rounded-2xl  md:w-[360px] xxs:w-[90%] p-4 h-full '
       style={{ 
         backdropFilter: 'blur(10px)',
         backgroundColor: 'rgba(128, 128, 128, 0.2)'
       }}>
-        <div className='relative h-[49%]'>
+        <div className='relative md:h-[49%] xxs:h-auto '>
           
           <img 
           src={image}
           alt={name}
-          className='w-full h-full object-cover rounded-2xl'/>
+          className='w-full md:h-full xxs:h-1/2 object-cover rounded-2xl'/>
 
           <div 
           className='absolute inset-0 flex justify-end  card-img_hover'>
@@ -49,13 +49,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>
+          <h3 className='text-white font-bold md:text-[24px] xxs:text-[14px] '>
             {name}
           </h3>
-          <p className='mt-2 text-white text-[14px] '>{description}</p>
+          <p className='mt-2 text-white md:text-[14px]  xxs:text-[10px] '>{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2 '> 
+        <div className='mt-4  flex flex-wrap gap-2 '> 
           {tags.map((tag) => (
             <p key={tag.name} 
             className={`${tag.color} text-[14px]`}>#{tag.name}</p>
@@ -92,7 +92,7 @@ const Works = () => {
 
     </div>
 
-    <div className='  mt-20 flex flex-wrap  gap-7 justify-evenly '>
+    <div className='  mt-20 flex   md:flex-wrap  md:gap-7 xxs:gap-x-0 xxs:gap-y-2 justify-evenly  '>
       {projects.map((project, index) => (
         <ProjectCard  key={`project-${index}`}
         index={index}
