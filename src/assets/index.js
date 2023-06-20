@@ -14,6 +14,10 @@ import expenses from "./expenses.webp";
 import quiz from "./quiz.webp";
 import menu from "./menu.svg";
 import linkin from "./linkin.png";
+import landing from "./landing.webp";
+import shipping from "./shipping.webp";
+import game from "./game.webp";
+import quizz2 from "./quizz2.webp";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -33,6 +37,8 @@ import fastapi from "./tech/fastapi.png";
 
 
 export {
+  game,
+  quizz2,
   linkin,
   menu,
   quiz, 
@@ -64,4 +70,6 @@ export {
   nodejs,
   reactjs,
   tailwind,
+  landing, 
+  shipping
 };

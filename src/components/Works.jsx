@@ -16,7 +16,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
     <div 
     // className='xs:w-full'
     
-      className='bg-transparent rounded-2xl lg:w-[360px]  h-full p-4  xs:w-[250px]  '
+      className='bg-transparent rounded-2xl lg:w-[340px]  h-full p-4  xs:w-[250px]  '
       style={{ 
         backdropFilter: 'blur(10px)',
         backgroundColor: 'rgba(128, 128, 128, 0.2)'

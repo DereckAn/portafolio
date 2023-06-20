@@ -13,6 +13,7 @@ import {
     sql,
     docker,
     portaIma,
+    landing,
     dessert,
     linux,
     fastapi,
@@ -20,7 +21,10 @@ import {
     math,
     expenses,
     quiz,
-    dice
+    dice,
+    shipping,
+    game,
+    quizz2
   } from "../assets";
   
   export const navLinks = [
@@ -315,6 +319,90 @@ import {
       ],
       image: dessert,
       source_code_link: "https://github.com/DereckAn/practice/tree/main/Java/Week3/DessertShop",
+    },
+    {
+      name: "Landing Page",
+      description:
+        "This project had the purpose of creating a landing page for practicing HTML, CSS, JavaScript, and React.",
+      tags: [
+        {
+          name: "HTML",
+          color: "red-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue2-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: landing,
+      source_code_link: "https://github.com/DereckAn/landingpage",
+    },
+    {
+      name: "Shopping List",
+      description:
+        "With this Project I create the front-end and the back-end. The goal was to connect both parts and to learn how to use the fetch method. ",
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Fire Base",
+          color: "yellow-text-gradient",
+        }
+      ],
+      image: shipping,
+      source_code_link: "https://github.com/DereckAn/FlutterProjects/tree/main/shipping_app",
+    },
+    {
+      name: "Color Match Game",
+      description:
+        "This was a weekend proyect. The goal was to create a game where the user has to match the color of the word with the color of the text. ",
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: game,
+      source_code_link: "https://github.com/DereckAn/FlutterProjects/tree/main/color_game",
+    },
+    {
+      name: "Quizz App 2",
+      description:
+        "This was a weekend proyect. The goal was to put in practice the knowledge acquired in the first quizz app and implemente new features. ",
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: quizz2,
+      source_code_link: "https://github.com/DereckAn/FlutterProjects/tree/main/quizz_app",
     },
   ];
   

@@ -141,7 +141,7 @@ body:hover .curser{
   -webkit-text-fill-color: transparent;
 }
 
-.orange-text-gradient {
+.yellow-text-gradient {
   background: #f5af19; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
