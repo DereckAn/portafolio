@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
@@ -54,7 +55,7 @@ module.exports = {
         xxs: "350px",
         xxxs: "250px",
         lg: "1023px",
-        // ...defaultTheme.screens,
+        ...defaultTheme.screens,
       },
       backgroundImage: {
         "cerdo-pattern": "url('/src/assets/cerdo.webp')",

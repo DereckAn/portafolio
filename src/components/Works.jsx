@@ -6,21 +6,17 @@ import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion'; 
+// import { Projects } from './Projects';
 
 
 //https://www.ensign.edu/favicon-32x32.png  este es icono de la escuela ensign college 
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div 
-    className=' flex flex-col xxs:w-full '
-    variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <Tilt options={{
-        max: 45,
-        scale: 1,
-        speed: 450
-      }}
-      className='  bg-transparent rounded-2xl  md:w-[360px] xxs:w-[90%] p-4 h-full '
+    <div 
+    // className='xs:w-full'
+    
+      className='bg-transparent rounded-2xl lg:w-[360px]  h-full p-4  xs:w-[250px]  '
       style={{ 
         backdropFilter: 'blur(10px)',
         backgroundColor: 'rgba(128, 128, 128, 0.2)'
@@ -65,8 +61,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
 
 
-      </Tilt>
-    </motion.div>
+      
+    </div>
   )
 }
 
@@ -92,9 +88,9 @@ const Works = () => {
 
     </div>
 
-    <div className='  mt-20 flex   md:flex-wrap  md:gap-7 xxs:gap-x-0 xxs:gap-y-2 justify-evenly  '>
+    <div className='  mt-20 flex   flex-wrap  md:gap-7 xxs:gap-x-0 xxs:gap-y-2 justify-evenly  '>
       {projects.map((project, index) => (
-        <ProjectCard  key={`project-${index}`}
+        <ProjectCard key={`project-${index}`}
         index={index}
         {...project}/>
       ))}

@@ -9,7 +9,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Tecnologies from './Tecnologies';
-import projects from './projects';
+import projects from './Projects';
 
 export {
   Hero2,
